@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.topbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    padding: 0px 20px
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #212021;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+li {
+    display: inline-block;
+}
+
+.account a {
+    text-decoration: none;
+    color: #212021;
+}
+
+.account li {
+    margin: 0px 15px;
+    border: 1px solid #f0f0f0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.active-account-li {
+    background-color: black;
+}
+
+.active-account-li a {
+    color: white
+}
+
+.main-showup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content,
+.hero-image {
+    flex: 1 1 0;
+    /* width: 0; */
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.main-showup h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.getstarted {
+    margin-top: 60px;
+}
+
+.show-smaller {
+    display: none;
+}
+
+.getstarted a {
+    text-decoration: none;
+    padding: 10px 40px;
+    background: linear-gradient(90deg, rgba(221, 155, 240, 1) 0%, rgba(166, 233, 251, 1) 35%, rgba(246, 250, 251, 1) 100%);
+    color: #212021;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 2px solid white;
+    -webkit-box-shadow: 0px 0px 5px -2px #000000;
+    box-shadow: 0px 0px 5px -2px #000000;
+}
+
+.hamburger {
+    width: 30px;
+}
+
+@media screen and (max-width: 930px) {
+    .main-showup {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .hero-image img {
+        width: 70%;
+    }
+    .getstarted {
+        margin-bottom: 20px;
+    }
+    .hero-image {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-showup h1 {
+        font-size: 2rem;
+    }
+    .getstarted {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .menu,
+    .account {
+        display: none;
+    }
+    .show-smaller {
+        display: block;
+    }
+}
